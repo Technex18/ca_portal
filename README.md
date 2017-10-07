@@ -62,3 +62,75 @@ Json Response for invalid form submission(empty username/password and other vali
 									"Error" : True,<br>
 									"status" : "Please Fill the form correctly!"<br>
 								}<br><br><br>					
+
+## AccountdetailApi
+<br><br>
+Url: http://technex-ca.herokuapp.com/api/editprofile/
+<br>
+Method: POST
+<br>
+Json object Expected :<br>   {
+  <br>
+      <br>"email":"bikram.bharti99@gmail.com",
+      <br>"first_name":"new firstname",
+      <br>"last_name":"new lastname",
+      <br>"mobileNumber":1234567898,
+      <br>"whatsappNumber":9999999999,
+      <br>"pinCode":123456,
+      <br>"postal_address":"new address",
+      <br>"year": 2
+<br>}
+
+Json Response for Wrong Post Request Method: <br> {<br>
+                        "status":"Invalid Request"<br>
+                        }<br><br>
+
+Json Response for profile edit confirmation: <br> {<br>
+                        "status":"OK"<br>
+                        }<br><br><br>
+
+
+## DashboardApi
+<br><br>
+
+Url: http://technex-ca.herokuapp.com/api/dashboard/
+<br>
+Method: POST
+<br>
+Json object Expected :<br>   {
+  <br>"email":"bikram.bharti99@gmail.com"
+<br>}
+
+Json Response for Wrong Post Request Method: <br> {<br>
+                        "status": 0 <br>
+                        }<br><br>
+
+Json Response for No Director Detail: <br>{
+<br>
+                                  "status":2 <br> }<br><br>
+
+Json Response for No Student Body detail: <br>{
+<br>
+                                  "status":3 <br> }<br><br> 
+
+Json Response for No Director Detail and No student Body detail : <br>{
+<br>
+                                  "status":4 <br> }<br><br>                
+
+Json Response for Director detail, student detail, notifications: <br> {<br>
+                        "status": 1
+                        "notification":[
+                                        {<br>
+                                          "message":"Message of first notification"<br>
+                                          "creation_time":time("2017-10-07T12:12:42.037Z")<br>
+                                          "mark_read":boolean(true/false)<br>
+                                        }<br>
+                                        {<br>
+                                          "message":"Message of second notification"<br>
+                                          "creation_time":time("2017-10-07T12:13:10.756Z")<br>
+                                          "mark_read":boolean(true/false)<br>
+                                        }<br>
+                                      ]<br>
+                        "directordetail":"Details of the Director"<br>
+                        "studentbodydetail":"Details of student body"<br>
+                        }<br><br><br>
