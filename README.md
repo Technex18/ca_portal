@@ -122,12 +122,12 @@ Json Response for Director detail, student detail, notifications: <br> {<br>
                         "notification":<br>[<br>
                                         {<br>
                                           "message":"Message of first notification"<br>
-                                          "creation_time":time("2017-10-07T12:12:42.037Z")<br>
+                                          "creation_time":"2017-10-07 12:12:54.656000+00:00"(String type casted time)<br>
                                           "mark_read":boolean(true/false)<br>
                                         }<br>
                                         {<br>
                                           "message":"Message of second notification"<br>
-                                          "creation_time":time("2017-10-07T12:13:10.756Z")<br>
+                                          "creation_time":"2017-10-07 12:13:10.756000+00:00"(String type casted time)<br>
                                           "mark_read":boolean(true/false)<br>
                                         }<br>
                                       ]<br>
@@ -170,11 +170,11 @@ Json object Expected :<br>   {
   <br>"studentbodydetail":"Updated studentbody details"
   <br>"notification":<br>[<br>
                       {<br>
-                       "creation_time":time("2017-10-07T12:12:42.037Z")<br>
+                       "creation_time":"2017-10-07 12:12:42.037000+00:00"(String type casted time)<br>
                        "mark_read":boolean(true/false)<br>
                       }<br>
                       {<br>
-                       "creation_time":time("2017-10-07T12:13:10.756Z")<br>
+                       "creation_time":"2017-10-07T12:13:10.756000+00:00"(String type casted time)<br>
                        "mark_read":boolean(true/false)<br>
                       }<br>
                      ]<br>
