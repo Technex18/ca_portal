@@ -1,4 +1,4 @@
-#Technex CA
+# Technex CA
 
 # Api Documentation
 
@@ -133,8 +133,11 @@ Json Response for Wrong Post Request Method: <br> {<br>
 
 Json Response for points: <br> {<br>
                         "status": 1<br>
-                        "points":10<br>
+                        "points": 10<br>
+			"rank": 3(Same rank for same points and others as per position in list)<br>
                         }<br><br><br>
+
+
 
 
 
@@ -151,11 +154,11 @@ Json object Expected :<br>   {
   <br>"studentbodydetail":"Updated studentbody details"
   <br>"notification":<br>[<br>
                       {<br>
-                       "creation_time":"2017-10-07 12:12:42.037000+00:00"(String type casted time)<br>
+                       "creation_time":"2017-10-07T12:13:10.756000+00:00"(String type casted time)<br>
                        "mark_read":boolean(true/false)<br>
                       }<br>
                       {<br>
-                       "creation_time":"2017-10-07T12:13:10.756000+00:00"(String type casted time)<br>
+                       "creation_time":"2017-10-07 12:12:42.037000+00:00"(String type casted time)<br>
                        "mark_read":boolean(true/false)<br>
                       }<br>
                      ]<br>
