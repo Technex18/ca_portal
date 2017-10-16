@@ -116,10 +116,10 @@ Json Response for Director detail, student detail, notifications: <br> {<br>
                         "studentbodydetail":"Details of student body"<br>
                         }<br><br><br>
 
-## LeaderBoardApi
+## LeaderApi
 <br><br>
 
-Url: http://technex-ca.herokuapp.com/api/leaderboard/
+Url: http://technex-ca.herokuapp.com/api/leader/
 <br>
 Method: POST
 <br>
@@ -130,6 +130,10 @@ Json object Expected :<br>   {
 Json Response for Wrong Post Request Method: <br> {<br>
                         "status": 0 <br>
                         }<br><br>
+			
+Json Response for a non choosen CA: <br> {<br>
+			"status": 2 <br>
+			}<br><br>
 
 Json Response for points: <br> {<br>
                         "status": 1<br>
@@ -138,7 +142,37 @@ Json Response for points: <br> {<br>
                         }<br><br><br>
 
 
+## LeaderBoardApi
+<br><br>
 
+Url: http://technex-ca.herokuapp.com/api/leaderboard/
+<br>
+Method: GET
+<br>
+
+Json Response for Wrong GET Request Method: <br> {<br>
+                        "status": 0 <br>
+                        }<br><br>
+
+Json Response for LeaderBoard: <br> {<br>
+                        "Leaderboard": [<br>
+				{<br>
+                        	"rank": 3<br>
+				"points": 10(Same rank for same points and others as per position in list)<br>
+				"username": "bikram.bharti99@gmail.com"(email id is the username)<br>
+				},<br>
+				{<br>
+				"rank": 3<br>
+				"points": 10(Same rank for same points and others as per position in list)<br>
+				"username": "kautilyakatiha10@gmail.com"(email id is the username)<br>
+				}<br>
+				{<br>
+				"rank": 5<br>
+				"points": 8(Same rank for same points and others as per position in list)<br>
+				"username": "something@gmail.com"(email id is the username)<br>
+				}<br>
+			]<br>
+                        }<br><br><br>
 
 
 ## DashboardUpdateApi
