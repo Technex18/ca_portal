@@ -98,20 +98,8 @@ Json Response for No Director Detail and No student Body detail : <br>{
 <br>
                                   "status":4 <br> }<br><br>                
 
-Json Response for Director detail, student detail, notifications: <br> {<br>
+Json Response for Director detail, student detail: <br> {<br>
                         "status": 1<br>
-                        "notification":<br>[<br>
-                                        {<br>
-                                          "message":"Message of first notification"<br>
-                                          "creation_time":"2017-10-07 12:12:54.656000+00:00"(String type casted time)<br>
-                                          "mark_read":boolean(true/false)<br>
-                                        }<br>
-                                        {<br>
-                                          "message":"Message of second notification"<br>
-                                          "creation_time":"2017-10-07 12:13:10.756000+00:00"(String type casted time)<br>
-                                          "mark_read":boolean(true/false)<br>
-                                        }<br>
-                                      ]<br>
                         "directordetail":"Details of the Director"<br>
                         "studentbodydetail":"Details of student body"<br>
                         }<br><br><br>
@@ -204,4 +192,35 @@ Json Response no notification for given creation_time: <br> {<br>
                         
 Json Response for update confirmation: <br> {<br>
                         "status": 1<br>
+                        }<br><br><br>
+
+## notificationApi
+<br><br>
+
+Url: http://technex-ca.herokuapp.com/api/notification/
+<br>
+Method: POST
+<br>
+Json object Expected :<br>   {
+  <br>"email":"bikram.bharti99@gmail.com"
+<br>}
+
+Json Response for Wrong Post Request Method: <br> {<br>
+                        "status": 0 <br>
+                        }<br><br>                
+
+Json Response for notifications: <br> {<br>
+                        "status": 1<br>
+                        "notification":<br>[<br>
+                                        {<br>
+                                          "message":"Message of first notification"<br>
+                                          "creation_time":"2017-10-07 12:12:54.656000+00:00"(String type casted time)<br>
+                                          "mark_read":boolean(true/false)<br>
+                                        }<br>
+                                        {<br>
+                                          "message":"Message of second notification"<br>
+                                          "creation_time":"2017-10-07 12:13:10.756000+00:00"(String type casted time)<br>
+                                          "mark_read":boolean(true/false)<br>
+                                        }<br>
+                                      ]<br>
                         }<br><br><br>
