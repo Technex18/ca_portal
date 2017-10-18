@@ -31,16 +31,17 @@ Json Response if user ca profile is not chosen: <br> { <br>
                                                         }<br><br>
 Json Response if user ca profile is chosen: <br> {<br>
                                                       "status": "1"<br>
-                                                       "whatsappNumber": 9999999999,
-    "name": "bikram",
-    "pastExp": "test",
-    "pinCode": 111111,
-    "whyChooseYou": "test",
-    "email": "bikram.bharti99@gmail.com",
-    "college": "test",
-    "mobileNumber": 9999999999,
-    "status": 1,
-    "year": 2                                 }<br><br><br>
+                                                       "whatsappNumber": 9999999999,<br>
+    "first_name": "bikram",<br>
+    "last_name": "bharti",<br>
+    "pastExp": "test",<br>
+    "pinCode": 111111,<br>
+    "whyChooseYou": "test",<br>
+    "email": "bikram.bharti99@gmail.com",<br>
+    "college": "test",<br>
+    "mobileNumber": 9999999999,<br>
+    "status": 1,<br>
+    "year": 2<br>                                }<br><br><br>
 				
 				
 				
@@ -194,7 +195,7 @@ Json Response for update confirmation: <br> {<br>
                         "status": 1<br>
                         }<br><br><br>
 
-## notificationApi
+## NotificationApi
 <br><br>
 
 Url: http://technex-ca.herokuapp.com/api/notification/
