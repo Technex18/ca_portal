@@ -38,6 +38,7 @@ Json Response if user ca profile is chosen: <br> {<br>
     "pinCode": 111111,<br>
     "whyChooseYou": "test",<br>
     "email": "bikram.bharti99@gmail.com",<br>
+    "postel_address": "123A XYZ Colony"<br>
     "college": "test",<br>
     "mobileNumber": 9999999999,<br>
     "status": 1,<br>
